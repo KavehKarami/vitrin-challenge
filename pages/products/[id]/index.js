@@ -1,3 +1,4 @@
+import Head from "next/head";
 import {
   staticPaths,
   staticProps,
@@ -14,7 +15,13 @@ export function getStaticProps({ params }) {
 
 function ProductDetail({ productInfo }) {
   return (
-    <div className="container">{<ProductCard productInfo={productInfo} />}</div>
+    <div className="container">
+      <Head>
+        <title>{productInfo.title}</title>
+        <meta name="description" content={productInfo.description} />
+      </Head>
+      <ProductCard productInfo={productInfo} />
+    </div>
   );
 }
 
