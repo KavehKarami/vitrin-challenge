@@ -1,16 +1,8 @@
 function CardImage() {
   return (
     <div className="product-image">
-      <img
-        src="/images/nikeLogo.png"
-        alt="logo"
-        className="product-logo"
-      />
-      <img
-        src="/images/nikeShoe.png"
-        alt="nikeShoe"
-        className="product-pic"
-      />
+      <img src="/images/nikeLogo.png" alt="logo" className="product-logo" />
+      <img src="/images/nikeShoe.png" alt="nikeShoe" className="product-pic" />
       <div className="dots">
         <a href="#!" className="active">
           <i>1</i>
